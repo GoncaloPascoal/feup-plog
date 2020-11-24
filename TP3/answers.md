@@ -12,3 +12,13 @@
 **j)** `X = a, Z = [Y | T]`  
 **k)** `H = apple, T = [Z]`  
 **l)** `yes`
+
+**2. a)** `no`  
+**b)** `C = [a], B = [b]`  
+**c)** `X = c`  
+**d)** `no`  
+**e)** `X = joao, Y = gosta, Z = peixe`  
+**f)** `no`  
+**g)** `no`  
+**h)** `P = branco, Q = cavalo`  
+**i)** `X = 1, Y = 2, Z = 3, D = [4, 5, 6, 7]`
