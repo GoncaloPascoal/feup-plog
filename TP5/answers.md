@@ -22,7 +22,34 @@ X = 1, Y = 1
 X = 1, Y = 2
 ```
 
+**3. a)**
+```
+um
+dois
+tres
+ultima_clausula
+no
+```
+**b)**
+```
+um
+no
+```
+**c)**
+```
+um-um
+um-dois
+um-tres
+no
+```
+
 **4. a)** If X = Y, X > Z and Y > Z the program will incorrectly state that Z is the largest number.
+**b)**
+```prolog
+max(X, Y, Z, X) :- X >= Y, X >= Z, !.
+max(X, Y, Z, Y) :- Y >= X, Y >= Z, !.
+max(_, _, Z, Z).
+```
 
 **6.**
 * `imaturo(X)`: red cut, makes `imaturo(X)` same as `not(adulto(X))`
