@@ -22,3 +22,7 @@
 **g)** `no`  
 **h)** `P = branco, Q = cavalo`  
 **i)** `X = 1, Y = 2, Z = 3, D = [4, 5, 6, 7]`
+
+**16. a)** The predicate replaces every second word in the list with 'censored'.  
+**b)** If the provided list has an odd number of words, after processing all pairs we will be left with a list
+with a single word, which couldn't be unified with any of the clauses. Therefore we need to add a second base case.
