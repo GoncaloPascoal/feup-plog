@@ -109,3 +109,32 @@ ageRange(Game, AverageAge) :-
 
 % QUESTION 9
 
+effectiveness(Player, Game, Effectiveness) :-
+    played(Player, Game, Hours, Percentage),
+    Effectiveness is Percentage / Hours.
+
+reverseList(L, R) :-
+    reverseList(L, [], R).
+reverseList([], Acc, Acc).
+reverseList([H | T], Acc, R) :-
+    reverseList(T, [H | Acc], R).
+
+getEffective([], _, []).
+getEffective([E-P | Rest], Max, [P | RestEff]) :-
+    E =:= Max, !,
+    getEffective(Rest, Max, RestEff).
+getEffective(_, _, []).
+
+mostEffectivePlayers(Game, Players) :-
+    setof(E-P, effectiveness(P, Game, E), S),
+    reverseList(S, RS),
+    RS = [Max-_ | _],
+    getEffective(RS, Max, Players).
+
+% QUESTION 10
+
+/*
+
+Given a player X, the predicate succeeds if the player hasn't played a game that isn't appropriate for their age. A better name for the predicate would be playsOnlyAgeAppropriate(?X).
+
+*/
