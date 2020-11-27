@@ -91,3 +91,18 @@ renata    e
 
 joga(renata, [tenis, basquete, volei]).
 ```
+
+**6.**
+```prolog
+:- op(500, xfx, was).
+:- op(400, xfx, of).
+
+vera was secretary of department.
+paulo was professor of course.
+```
+
+**7. a)** `A = 1+0`  
+**b)** `B = 1+1+0`  
+**c)** `C = 1+1+1+1+0`  
+**d)** `D = 1+1+0+1`
+
