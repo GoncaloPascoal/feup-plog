@@ -135,6 +135,23 @@ mostEffectivePlayers(Game, Players) :-
 
 /*
 
-Given a player X, the predicate succeeds if the player hasn't played a game that isn't appropriate for their age. A better name for the predicate would be playsOnlyAgeAppropriate(?X).
+Dado um jogador X, o predicado sucede se o jogador não tenha jogado um jogo que não é apropriado para a sua idade.
+Se não for fornecido um jogador, a variável X unifica com o username do primeiro jogador que não tenha jogado jogos inapropriados 
+para a sua idade. O corte é vermelho, visto que se não for fornecido um jogador, em vez de retornar o username de todos os
+jogadores que só joguem jogos apropriados se pedirmos outras soluções, o predicado apenas retorna o primeiro que encontra.
+Melhores nomes para o predicado e variáveis:
+
+whatDoesItDo - playsOnlyAgeAppropriate
+X - Username
+Y - Name
+Z - PlayerAge,
+G - Game
+L - Hours
+M - Percentage
+N - Categories
+W - RecommendedAge.
 
 */
+
+% QUESTION 11
+
